@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <!--You will get all the styles of the header in header.css file and Responsive.css file-->
+        <div class="top-bar">
+            <div class="top-bar-wrapper">
+                <div class="contact-info">
+                    <a href="tel:01863813906"><i class="fas fa-phone"></i>01863813906</a>
+                    <a href="mailto:mmohin.rahat@gmail.com"><i class="fas fa-envelope"></i>mmohin.rahat@gmail.com</a>
+                </div>
+
+                <div class="">
+
+                </div>
+                <div class="other-info">
+                    <a href="#"><i class="fas fa-mobile"></i> Download Our App</a>
+                </div>
+            </div>
+        </div>
+        <div class="middle-bar">
+            <div class="middle-bar-wrapper">
+                <div class="col-2">
+                    <div class="brand">
+                        <img class="logo" src="../img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <form class="search-bar" action="/index.html">
+                        <select class="search-category" name="" id="">
+                            <option value="1">All</option>
+                            <option value="1">Brand</option>
+                            <option value="1">Name</option>
+                            <option value="1">Color</option>
+                            <option value="1">Size</option>
+                            <option value="1">Gender</option>
+                        </select>
+                        <input class="search-input" type="text" name="search" placeholder="Search...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+
+                </div>
+                <div class="col-2">
+                    <div class="header-nav">
+                        <ul>
+                            <li title="Your Favorite"><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li title="Shopping Cart" id="cartBtn"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li title="Your Profile"><a href="#"><i class="fas fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-bar-wrapper">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Offer</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="flash-sale-btn">
+                    <li><a href="#">Flash Sale</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- floating shopping cart -->
+    <div class="floating-cart">
+        <div class="cart-header">
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+            <p>My Cart</p>
+        </div>
+        <div class="cart-body">
+            <img class="cart-placeholder" src="../img/empty-cart.svg" alt="">
+            <a href="index.html" class="go-to-shop"> <i class="fas fa-arrow-left"></i> Back to Shop</a>
+        </div>
+    </div>
+    <!-- floating shopping cart End-->
+    <main>
+        <div class="product-details-wrapper">
+            <!-- Left collumn -->
+            <div class="product_image">
+                <div class="selected_image">
+                    <img class="mainImage" src="../img/shoe_1.jpg" alt="">
+                </div>
+                <div class="thumbnail_image">
+                    <div class="thumb_item" onclick="changeImg(this)">
+                        <img src="../img/shoe_1.jpg" alt="">
+                    </div>
+                    <div class="thumb_item" onclick="changeImg(this)">
+                        <img src="../img/shoe_2.jpg" alt="">
+                    </div>
+                    <div class="thumb_item" onclick="changeImg(this)">
+                        <img src="../img/shoe_3.jpg" alt="">
+                    </div>
+                    <div class="thumb_item" onclick="changeImg(this)">
+                        <img src="../img/shoe_4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Right collumn -->
+            <div class="product_details">
+                <div class="item_info">
+                    <h2 class="product_name">Nike Comportable Shoes Red Edition</h2>
+                    <div class="brand">
+                        <i class="fab fa-innosoft"></i>
+                        <p>Nike </p>
+                    </div>
+
+                    <div class="price">
+                        <p class="old_price">Old Price:<span>1280</span></p>
+                        <p class="new_price">New Price:<span>1200 (Save 3%)</span></p>
+                    </div>
+                </div>
+                <div class="item_details">
+                    <h3>Full Discription</h3>
+                    <p class="details_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae nemo, saepe earum laboriosam assumenda doloremque voluptate repudiandae aliquid sit a sequi temporibus vel voluptatum magni in sapiente vitae nihil. Lorem ipsum
+                        <span class="readMoreDots">...</span>
+                        <span class="more_text">dolor sit amet consectetur adipisicing elit. Eligendi quae nemo, saepe
+                            earum laboriosam assumenda doloremque. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eligendi quae nemo, saepe earum laboriosam assumenda doloremque.</span>
+                    </p>
+                    <button class="read_more">More </button>
+                    <ul class="key_feature">
+                        <li><strong>Brand:</strong>Nike</li>
+                        <li><strong>Color:</strong>Rad</li>
+                        <li><strong>Category:</strong>Shoes</li>
+                        <li><strong>In Stock:</strong>12</li>
+                        <li><strong>Shipping Cost:</strong>Free</li>
+                    </ul>
+                </div>
+                <div class="controls">
+                    <input type="number" min="1" max="5" value="1" name="" id="">
+                    <Button class="cart">Add to Card <i class="fas fa-arrow-right"></i></Button>
+                    <Button class="compare">Compare <i class="fas fa-redo"></i></Button>
+                </div>
+            </div>
+        </div>
+        <!-- Releted Product -->
+        <div class="section-title">
+            <h2>Releted Products</h2>
+            <a class="view-more-product" href="#">View More</a>
+        </div>
+        <div class="releted-product">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_1.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_2.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_3.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_4.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_1.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_2.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_3.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_4.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-wrapper">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="../img/shoe_1.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-name">Nike Mans Shoe (Rad)</h3>
+                                    <p class="new-price">BDT 2800
+                                        <span class="old-price">BDT 3500</span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="quick-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="details-btn">
+                                <button class="view-details">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="col-3">
+                <h3>About us</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde fugit earum expedita iste voluptates, ad aspernatur! Blanditiis obcaecati recusandae suscipit illo iure quo distinctio nisi, eius reiciendis optio fuga facilis?</p>
+            </div>
+            <div class="col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Address</h3>
+                <p>House-1070, Mirpur-02, Dhaka-1216
+                    <br> <a href="tel:+880-1625173861">+880-1625173861 (Hotline)</a>
+                    <br> Mon-Fri 10.00 AM - 06.00 PM
+                    <br> <a href="mailto:support@chocopiebd.com">support@chocopiebd.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../app.js"></script>
+    <script>
+        // Releted Product
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

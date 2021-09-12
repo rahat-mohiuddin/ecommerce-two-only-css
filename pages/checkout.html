@@ -1,1 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <!--You will get all the styles of the header in header.css file and Responsive.css file-->
+        <div class="top-bar">
+            <div class="top-bar-wrapper">
+                <div class="contact-info">
+                    <a href="tel:01863813906"><i class="fas fa-phone"></i>01863813906</a>
+                    <a href="mailto:mmohin.rahat@gmail.com"><i class="fas fa-envelope"></i>mmohin.rahat@gmail.com</a>
+                </div>
+
+                <div class="">
+
+                </div>
+                <div class="other-info">
+                    <a href="#"><i class="fas fa-mobile"></i> Download Our App</a>
+                </div>
+            </div>
+        </div>
+        <div class="middle-bar">
+            <div class="middle-bar-wrapper">
+                <div class="col-2">
+                    <div class="brand">
+                        <img class="logo" src="../img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <form class="search-bar" action="/index.html">
+                        <select class="search-category" name="" id="">
+                            <option value="1">All</option>
+                            <option value="1">Brand</option>
+                            <option value="1">Name</option>
+                            <option value="1">Color</option>
+                            <option value="1">Size</option>
+                            <option value="1">Gender</option>
+                        </select>
+                        <input class="search-input" type="text" name="search" placeholder="Search...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+
+                </div>
+                <div class="col-2">
+                    <div class="header-nav">
+                        <ul>
+                            <li title="Your Favorite"><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li title="Shopping Cart" id="cartBtn"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li title="Your Profile"><a href="#"><i class="fas fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-bar-wrapper">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Offer</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="flash-sale-btn">
+                    <li><a href="#">Flash Sale</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Alart for all -->
+    <div class="warning-alert">
+        <p>Please check the terms and conditions !</p>
+        <span class="close">&times;</span>
+    </div>
+    <!-- floating shopping cart -->
+    <div class="floating-cart">
+        <div class="cart-header">
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+            <p>My Cart</p>
+        </div>
+        <div class="cart-body">
+            <img class="cart-placeholder" src="../img/empty-cart.svg" alt="">
+            <a href="index.html" class="go-to-shop"> <i class="fas fa-arrow-left"></i> Back to Shop</a>
+        </div>
+    </div>
+    <!-- floating shopping cart End-->
+    <main>
+        <div class="section-title">
+            <h2>Checkout</h2>
+        </div>
+        <div class="checkout-wrapper">
+            <div class="col-5 checkout-form">
+                <div class="section-title">
+                    <h2>Billing Detailst</h2>
+                </div>
+                <form action="/" class="billing-form" id="billingForm">
+                    <div class="form-row">
+                        <div class="form-control" id="formControl">
+                            <label for="name">First Name</label>
+                            <input type="text" placeholder="First Name" id="name">
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="name2">Last Name</label>
+                            <input type="text" placeholder="Last Name" id="name2">
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="phone">Phone</label>
+                            <input type="text" placeholder="Phone Number" id="phone">
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Email" id="email">
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="country">Country</label>
+                            <select name="" id="country">
+                                <option value="select" disabled selected>Select County</option>
+                                <option value="bangladesh">Bangladesh</option>
+                                <option value="india">India</option>
+                                <option value="pakisthan">Pakisthan</option>
+                                <option value="nepal">nepal</option>
+                                <option value="bhutan">Bhutan</option>
+                                <option value="china">China</option>
+                            </select>
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="city">City</label>
+                            <select name="" id="city" required>
+                                <option value="select" disabled selected>Select City</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="chittagong">Chittagong</option>
+                                <option value="rajsahi">Rajsahi</option>
+                                <option value="sylhet">Sylhet</option>
+                                <option value="comilla">Comilla</option>
+                                <option value="chandpur">Chandpur</option>
+                            </select>
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="fullAddress">Full Address</label>
+                            <input type="text" placeholder="Road no, House no etc." id="fullAddress">
+                            <small class="error-msg">This is error massage</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="checkbox-wrapper">
+                            <label for="ship-to-diff" class="ship-to-diff-label">
+                                Ship to a Diffrent Address?
+                                <input type="checkbox" class="ship-to-diff-input" id="ship-to-diff" onclick="showDiffAdd()">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Diffrent Address Form -->
+                    <div class="diffrent-add-form">
+                        <div class="form-row">
+                            <div class="form-control">
+                                <label for="nameD">First Name</label>
+                                <input type="text" placeholder="First Name" id="nameD">
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+                            <div class="form-control">
+                                <label for="name2D">Last Name</label>
+                                <input type="text" placeholder="Last Name" id="name2D">
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-control">
+                                <label for="phoneD">Phone</label>
+                                <input type="text" placeholder="Phone Number" id="phoneD">
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="EmailD">Email</label>
+                                <input type="email" placeholder="Email" id="emailD">
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-control">
+                                <label for="countryD">Country</label>
+                                <select name="" id="countryD">
+                                    <option value="select" disabled selected>Select Country</option>
+                                    <option value="bangladesh">Bangladesh</option>
+                                    <option value="india">India</option>
+                                    <option value="pakisthan">Pakisthan</option>
+                                    <option value="nepal">nepal</option>
+                                    <option value="bhutan">Bhutan</option>
+                                    <option value="china">China</option>
+                                </select>
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="cityD">City</label>
+                                <select name="" id="cityD">
+                                    <option value="select" disabled selected>Select City</option>
+                                    <option value="dhaka">Dhaka</option>
+                                    <option value="chittagong">Chittagong</option>
+                                    <option value="rajsahi">Rajsahi</option>
+                                    <option value="sylhet">Sylhet</option>
+                                    <option value="comilla">Comilla</option>
+                                    <option value="chandpur">Chandpur</option>
+                                </select>
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-control">
+                                <label for="fullAddressD">Full Address</label>
+                                <input type="text" placeholder="Road no, House no etc." id="fullAddressD">
+                                <small class="error-msg">This is error massage</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diffrent Address Form End-->
+                    <div class="form-row">
+                        <div class="form-control">
+                            <label for="note">Delivery Note</label>
+                            <textarea name="" id="note" cols="50" rows="8" placeholder="Type your instruction or something eals about your order.."></textarea>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-5 order-details">
+                <div class="section-title">
+                    <h2>Order Details</h2>
+                </div>
+                <!-- Order Item Table -->
+                <div class="order-item">
+                    <ul class="cart-items-list">
+                        <li>
+                            <p class="b">Products</p>
+                            <p class="b">Subtotal</p>
+                        </li>
+                        <li>
+                            <span class="list-product">
+                                <img src="../img/shoe_1.jpg" alt="" class="list-product-img">
+                                <h4 class="list-product-title">Nike Mans Shoe (Rad)</h4>
+                                <br>
+                                <small class="list-product-qt">1 items</small>
+                            </span>
+                            <span class="list-product-price b">TK. <span>5245</span> </span>
+                        </li>
+                        <li>
+                            <span class="list-product">
+                                <img src="../img/shoe_2.jpg" alt="" class="list-product-img">
+                                <h4 class="list-product-title">Adidus Mans Walking Shoe (Blue)</h4>
+                                <br>
+                                <small class="list-product-qt">3 items</small>
+                            </span>
+                            <span class="list-product-price b">TK. <span>5245</span> </span>
+                        </li>
+                        <li>
+                            <ul class="order-summery">
+                                <li>
+                                    <p>Subtotal</p>
+                                    <p class="b">TK. 10522</p>
+                                </li>
+                                <li>
+                                    <p>Shipping</p>
+                                    <p class="b"><span>Flat Rate.</span>Tk. 70</p>
+                                </li>
+                                <li class="list-product-total">
+                                    <p class="b">Total</p>
+                                    <p class="b">TK. 10592</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-title">
+                    <h2>Payment Method</h2>
+                </div>
+                <div class="payment-method" id="paymentOption">
+                    <ul class="payment-method-list">
+                        <li>
+                            <label for="cod">
+                                Cash on Delivery
+                                <input type="radio" name="pay" id="cod">
+                                <span class="checkmark"></span>
+                                <small>Pay with Cash</small>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="bkash">
+                                Bkash
+                                <input type="radio" name="pay" id="bkash">
+                                <span class="checkmark"></span>
+                                <small>Pay with Bkash</small>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="nagad">
+                                Nagad
+                                <input type="radio" name="pay" id="nagad">
+                                <span class="checkmark"></span>
+                                <small>Pay with Nagad</small>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-section">
+                    <p>
+                        Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in
+                        <a href="#">our privacy policy.</a>
+                    </p>
+                    <span class="terms-condition">
+                        <label for="terms">
+                            I have read and agree to the website <a href="#">terms and conditions *</a>
+                            <input type="checkbox" name="" id="terms">
+                        </label>
+                    </span>
+                    <button class="order-btn" id="orderButton">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="col-3">
+                <h3>About us</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde fugit earum expedita iste voluptates, ad aspernatur! Blanditiis obcaecati recusandae suscipit illo iure quo distinctio nisi, eius reiciendis optio fuga facilis?</p>
+            </div>
+            <div class="col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Address</h3>
+                <p>House-1070, Mirpur-02, Dhaka-1216
+                    <br> <a href="tel:+880-1625173861">+880-1625173861 (Hotline)</a>
+                    <br> Mon-Fri 10.00 AM - 06.00 PM
+                    <br> <a href="mailto:support@chocopiebd.com">support@chocopiebd.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../app.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
