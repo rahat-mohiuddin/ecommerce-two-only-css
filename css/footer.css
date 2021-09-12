@@ -1,0 +1,45 @@
+footer {
+    padding: 10px;
+    color: rgb(224, 222, 222);
+    background-color: rgb(31, 31, 31);
+}
+
+.footer-wrapper {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .col-3:nth-child(2) {
+    margin: 0 .4rem;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+footer h3,
+footer ul,
+footer p {
+    padding: .8rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    padding: 4px 0;
+    display: block;
+    transition: .3s all;
+}
+
+footer ul li:hover a {
+    padding-left: 4px;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+footer p {
+    text-align: justify;
+}

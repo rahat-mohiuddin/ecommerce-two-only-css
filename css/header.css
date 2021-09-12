@@ -1,0 +1,211 @@
+header {
+    width: 100%;
+    height: auto;
+}
+
+
+/* style for top bar */
+
+.top-bar {
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+}
+
+.top-bar .top-bar-wrapper {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar .top-bar-wrapper .contact-info {
+    display: inline-flex;
+}
+
+.top-bar .top-bar-wrapper .contact-info a {
+    color: crimson;
+}
+
+.top-bar .top-bar-wrapper .other-info a {
+    color: crimson;
+    padding: .5rem;
+    padding-right: 0;
+    display: block;
+    transition: .6s all;
+}
+
+.top-bar .top-bar-wrapper .other-info a:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.top-bar .top-bar-wrapper .other-info a:first-child {
+    margin-right: 5px;
+}
+
+.top-bar .top-bar-wrapper .contact-info a i {
+    padding: 10px;
+}
+
+
+/* Style for Middle bar */
+
+.middle-bar {
+    width: 100%;
+    height: auto;
+    padding: .2rem;
+    background-color: rgba(238, 238, 238, 0.884);
+}
+
+.middle-bar .middle-bar-wrapper {
+    margin: auto;
+    width: 80%;
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {}
+
+.brand .logo {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+
+.search-bar {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+.search-bar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar .search-category {
+    float: left;
+    border-color: #ddd;
+    border-right: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-bar .search-input {
+    width: 90%;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ddd;
+    outline: none;
+    padding: 11px;
+    float: left;
+}
+
+.search-bar .search-btn {
+    padding: 11px;
+    border: 1px solid crimson;
+    cursor: pointer;
+    color: #fff;
+    background-color: crimson;
+}
+
+.header-nav {}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav ul li {
+    padding: 1rem;
+}
+
+.header-nav ul li:last-child {
+    padding-right: 0;
+}
+
+.header-nav ul li a {
+    color: crimson;
+    font-size: 22px;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 40px;
+    background-color: crimson;
+}
+
+.nav-bar .nav-bar-wrapper {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .nav-bar-wrapper ul {
+    list-style: none;
+}
+
+.nav-bar .nav-bar-wrapper ul li {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: .6s all;
+}
+
+.nav-bar .nav-bar-wrapper .main-nav li:hover {
+    background-color: rgb(235, 37, 77);
+    border-bottom: 1px solid rgb(238, 221, 221);
+}
+
+.nav-bar .nav-bar-wrapper ul li a {
+    color: rgb(236, 227, 227);
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.flash-sale-btn {
+    color: #eee;
+    background-color: #222;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.flash-sale-btn:hover {
+    background-color: rgb(235, 37, 77);
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.nav-bar-mobile {
+    display: none;
+}
+
+.nav-bar-mobile ul {
+    list-style: none;
+}
+
+.nav-bar-mobile ul li {
+    display: inline-block;
+}
+
+.nav-bar-mobile ul li a {
+    padding: 4px 6px;
+    display: block;
+    color: #eee;
+}
+
+
+/* style for navbar end*/
