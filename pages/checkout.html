@@ -40,27 +40,57 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <form class="search-bar" action="/index.html">
-                        <select class="search-category" name="" id="">
-                            <option value="1">All</option>
-                            <option value="1">Brand</option>
-                            <option value="1">Name</option>
-                            <option value="1">Color</option>
-                            <option value="1">Size</option>
-                            <option value="1">Gender</option>
-                        </select>
-                        <input class="search-input" type="text" name="search" placeholder="Search...">
-                        <button class="search-btn"><i class="fas fa-search"></i></button>
-                    </form>
+                    <form class="search-form" action="/index.html">
+                        <div class="search-bar">
+                            <select class="search-category" name="" id="">
+                                <option value="1">All</option>
+                                <option value="1">Brand</option>
+                                <option value="1">Name</option>
+                                <option value="1">Color</option>
+                                <option value="1">Size</option>
+                                <option value="1">Gender</option>
+                            </select>
+                            <input class="search-input" type="text" name="search" placeholder="Search...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                            <div class="search-suggestion">
+                                <ul>
 
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-2">
                     <div class="header-nav">
                         <ul>
                             <li title="Your Favorite"><a href="#"><i class="fas fa-heart"></i></a></li>
                             <li title="Shopping Cart" id="cartBtn"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li title="Your Profile"><a href="#"><i class="fas fa-user"></i></a></li>
+                            <li title="Your Profile" id="myAccount" class="myAccount"><a href="#"><i class="fas fa-user"></i></a></li>
                         </ul>
+                        <!--popup my account -->
+                        <div class="my-account-wrapper" id="myAccountBox">
+                            <div class="account-header">
+                                <h2>Login</h2>
+                            </div>
+                            <form action="#" class="login">
+                                <div class="form-control">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="number" class="" id="phone">
+                                </div>
+                                <div class="form-control">
+                                    <label for="Password">Password</label>
+                                    <input type="password" class="" id="password">
+                                </div>
+                                <div class="form-control">
+                                    <input type="submit" value="Login" class="logBtn">
+                                </div>
+                            </form>
+                            <div class="account-footer">
+                                <p>Don't Have any Account? <a href="#">Sign Up</a></p>
+                                <hr>
+                                <a href="#">Forgot Password</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -377,6 +407,7 @@
 
 
     <script src="../app.js"></script>
+    <script src="../js/search_keyword.js"></script>
     <script>
     </script>
 </body>

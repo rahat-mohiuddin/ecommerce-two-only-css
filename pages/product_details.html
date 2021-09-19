@@ -40,19 +40,25 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <form class="search-bar" action="/index.html">
-                        <select class="search-category" name="" id="">
-                            <option value="1">All</option>
-                            <option value="1">Brand</option>
-                            <option value="1">Name</option>
-                            <option value="1">Color</option>
-                            <option value="1">Size</option>
-                            <option value="1">Gender</option>
-                        </select>
-                        <input class="search-input" type="text" name="search" placeholder="Search...">
-                        <button class="search-btn"><i class="fas fa-search"></i></button>
-                    </form>
+                    <form class="search-form" action="/index.html">
+                        <div class="search-bar">
+                            <select class="search-category" name="" id="">
+                                <option value="1">All</option>
+                                <option value="1">Brand</option>
+                                <option value="1">Name</option>
+                                <option value="1">Color</option>
+                                <option value="1">Size</option>
+                                <option value="1">Gender</option>
+                            </select>
+                            <input class="search-input" type="text" name="search" placeholder="Search...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                            <div class="search-suggestion">
+                                <ul>
 
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-2">
                     <div class="header-nav">
@@ -423,6 +429,7 @@
 
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../app.js"></script>
+    <script src="../js/search_keyword.js"></script>
     <script>
         // Releted Product
         var swiper = new Swiper(".mySwiper", {
