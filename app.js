@@ -1,3 +1,8 @@
+window.onscroll(() => {
+    let navBar = document.getElementsByClassName('nav-bar');
+    navBar.classList.add('sticky');
+});
+
 // Floating Cart
 let cartBtn = document.querySelector('#cartBtn');
 let closeBtn = document.querySelector('.close-cart');
@@ -10,6 +15,68 @@ closeBtn.addEventListener('click', (e) => {
     e.preventDefault();
     cartDiv.classList.remove('cartDiv');
 });
+
+//floating my account
+let myAccountBtn = document.getElementById('myAccount');
+let myAccount = document.getElementById('myAccountBox');
+myAccountBtn.onclick = (e) => {
+    e.preventDefault();
+    myAccount.classList.toggle('active');
+}
+
+//===========js for Search Bar=================//
+let searchBox = document.querySelector('.search-bar');
+let searchInput = searchBox.querySelector('input');
+let searchSuggestion = searchBox.querySelector('.search-suggestion ul');
+
+searchInput.addEventListener('keyup', (input) => {
+    let userData = input.target.value;
+    let emptyArr = [];
+    if (userData) {
+        emptyArr = searchKeywords.filter((data) => {
+            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        });
+        emptyArr = emptyArr.map((data) => {
+            return `<li>${data}</li>`;
+        })
+        searchSuggestion.parentElement.classList.add('active');
+        showSuggestion(emptyArr);
+
+        let suggestedList = searchSuggestion.querySelectorAll('li');
+        suggestedList.forEach((list) => {
+            list.setAttribute('onMouseOver', 'selectSuggestedOne(this)');
+            list.onclick = () => {
+                searchSuggestion.parentElement.classList.remove('active');
+            }
+        });
+
+
+    } else {
+        searchSuggestion.parentElement.classList.remove('active');
+    }
+
+});
+document.onclick = () => {
+    searchSuggestion.parentElement.classList.remove('active');
+}
+
+function selectSuggestedOne(input) {
+    let selectedText = input.textContent;
+    searchInput.value = selectedText;
+
+}
+
+function showSuggestion(data) {
+    let dataList;
+    if (!data.length) {
+        dataList = searchInput.value;
+    } else {
+        dataList = data.join('');
+
+    }
+    searchSuggestion.innerHTML = dataList;
+}
+
 
 //===========js for Checkout Page=================//
 //form validation
@@ -84,7 +151,7 @@ orderBtn.addEventListener('click', function() {
 let tearmsClose = document.querySelector('.warning-alert .close');
 tearmsClose.addEventListener('click', () => {
     tearmsClose.parentElement.style.visibility = "hidden";
-})
+});
 
 
 //diffrent address
@@ -131,8 +198,11 @@ allPayOption.forEach(input => {
 
 // Single Product Details Text Start
 const productDetails = document.querySelector(".details_text");
-var moreText = document.querySelector(".read_more");
-
+var moreText = document.querySelector(".more_text");
+var readMoreBtn = document.querySelector(".read_more");
+readMoreBtn.onclick = () => {
+    alert('its ok');
+}
 
 
 // Single Product Thumbnail Image
