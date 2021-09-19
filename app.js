@@ -1,8 +1,3 @@
-window.onscroll(() => {
-    let navBar = document.getElementsByClassName('nav-bar');
-    navBar.classList.add('sticky');
-});
-
 // Floating Cart
 let cartBtn = document.querySelector('#cartBtn');
 let closeBtn = document.querySelector('.close-cart');
